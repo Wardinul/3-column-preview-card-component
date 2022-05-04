@@ -1,0 +1,130 @@
+*, *::after, *::before{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+:root{
+    --bright-orange:hsl(31, 77%, 52%);
+    --dark-cyan:hsl(184, 100%, 22%);
+    --very-dark-cyan:hsl(179, 100%, 13%);
+
+    --paragraph-color:hsla(0, 0%, 100%, 0.75);
+    --bg-heading-btn:hsl(0, 0%, 95%);
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--bg-heading-btn);
+}
+
+.parent-container{
+    display: flex;
+    max-width: 70%;
+    min-height: 500px;
+    margin: 2em;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.parent-container > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 3em 2.5em;
+}
+
+.parent-container h1{
+    color: var(--bg-heading-btn);
+    margin: 1em 0;
+    font-family: 'Big Shoulders Display';
+}
+
+.parent-container p{
+    color: var(--paragraph-color);
+    line-height: 1.5;
+    font-size: 15px;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.parent-container a{
+    background-color: var(--bg-heading-btn);
+    text-decoration: none;
+    border: solid 2px white;
+    max-width:150px;
+    text-align: center;
+    border-radius: 25px;
+    font-family: 'Lexend Deca', sans-serif;
+    padding: .8em 0;
+    transition: .3s;
+}
+
+.parent-container a:hover{
+    color: var(--bg-heading-btn);
+    background-color: transparent;
+}
+
+img{
+    max-width: 100%;
+    width: 80px;
+}
+
+.sedans-col{
+    background-color: var(--bright-orange);
+}
+
+.sedans-col a{
+    color:var(--bright-orange);
+}
+
+.suvs-col{
+    background-color: var(--dark-cyan);
+}
+
+.suvs-col a{
+    color: var(--dark-cyan);
+}
+
+.luxury-col a{
+    color: var(--very-dark-cyan);
+}
+
+.luxury-col{
+    background-color: var(--very-dark-cyan);
+}
+
+@media screen and (max-width:965px) {
+    .parent-container{
+        flex-direction: column;
+    }
+    .parent-container > div{
+        padding: 1em 2em;
+    }
+    .parent-container a{
+        margin: 1em 0;
+    }
+}
+
+@media screen and (max-width:650px) {
+    .parent-container{
+        max-width: 100%;
+    }
+    .about h1,
+    .about p{
+        margin:.3em  0;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .parent-container > div{
+        text-align: center;
+        align-items: center;
+    }
+    .col-btn{
+        width: 100%;
+        margin: .5em 0 !important;
+    }
+}
