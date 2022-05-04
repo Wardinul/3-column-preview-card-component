@@ -50,7 +50,7 @@ body{
     font-family: 'Lexend Deca', sans-serif;
 }
 
-.parent-container a{
+.parent-container .col-btn{
     background-color: var(--bg-heading-btn);
     text-decoration: none;
     border: solid 2px white;
@@ -62,7 +62,7 @@ body{
     transition: .3s;
 }
 
-.parent-container a:hover{
+.parent-container .col-btn:hover{
     color: var(--bg-heading-btn);
     background-color: transparent;
 }
@@ -76,7 +76,7 @@ img{
     background-color: var(--bright-orange);
 }
 
-.sedans-col a{
+.sedans-col .col-btn{
     color:var(--bright-orange);
 }
 
@@ -84,16 +84,16 @@ img{
     background-color: var(--dark-cyan);
 }
 
-.suvs-col a{
+.suvs-col .col-btn{
     color: var(--dark-cyan);
-}
-
-.luxury-col a{
-    color: var(--very-dark-cyan);
 }
 
 .luxury-col{
     background-color: var(--very-dark-cyan);
+}
+
+.luxury-col .col-btn{
+    color: var(--very-dark-cyan);
 }
 
 @media screen and (max-width:965px) {
