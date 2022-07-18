@@ -96,6 +96,15 @@ img{
     color: var(--very-dark-cyan);
 }
 
+footer{
+    text-align: center;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+footer a{
+    text-decoration: none;
+}
+
 @media screen and (max-width:965px) {
     .parent-container{
         flex-direction: column;
